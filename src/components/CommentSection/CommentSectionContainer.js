@@ -10,11 +10,11 @@ const CommentSection = props => {
 
 
   return (
-    <div>
-      {props.comments.map(e => (
+    <div > {
+      props.comments.map(e => (
         <Comment comment={e} />
-      ))}
-      <CommentInput />
+      ))
+    } <CommentInput />
     </div>
   );
 };
