@@ -6,20 +6,37 @@
   align-items: center;
   background: #ffffff;
 }
+
 .search-form {
   width: 150px;
   font-size: 14px;
 }
+
 .search-form input {
   text-align: center;
   color: #262626;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.178);
 }
+
 .image-wrapper {
+  display: flex;
+  align-items: center;
   height: 50px;
 }
 
 .logo-image {
   height: 100%;
+}
+
+.image-wrapper i {
+  padding-right: 8%;
+  font-size: 2rem;
+}
+
+.instagramTitle {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 2rem;
 }
 
 .social-wrapper {
@@ -28,4 +45,5 @@
 
 .social {
   width: 50px;
+  font-size: 1.5rem;
 }
