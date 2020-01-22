@@ -14,7 +14,11 @@ const CommentSection = props => {
       props.comments.map(e => (
         <Comment comment={e} />
       ))
-    } <CommentInput />
+    }
+      <div className="comment-style">
+        <CommentInput />
+        <p>•••</p>
+      </div>
     </div>
   );
 };

@@ -20,6 +20,7 @@
   border: none;
   border-top: 1px solid #efefef;
   color: #999;
+  background-color: #fafafa;
 }
 
 .user {
@@ -27,4 +28,14 @@
   margin-left: 5px;
   color: black;
   font-weight: bold;
+}
+
+.comment-style {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.comment-style p {
+  padding-right: 3%;
 }
