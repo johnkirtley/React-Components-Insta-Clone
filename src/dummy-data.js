@@ -1,12 +1,10 @@
-const dummyData = [
-    {
+const dummyData = [{
         username: "philzcoffee",
         thumbnailUrl: 'https://instagram.fsjo9-1.fna.fbcdn.net/vp/d4728e507fe1eb2895fb7ca394bb6431/5E4122B1/t51.2885-15/s150x150/71118783_2434459423505735_6295784028176668008_n.jpg?_nc_ht=instagram.fsjo9-1.fna.fbcdn.net',
         imageUrl: 'https://images.unsplash.com/photo-1477763858572-cda7deaa9bc5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1876&q=80',
         likes: 400,
         timestamp: "July 17th 2017, 12:42:40 pm",
-        comments: [
-            {
+        comments: [{
                 username: "philzcoffee",
                 text: "We've got more than just delicious coffees to offer at our shops!"
             },
@@ -26,8 +24,7 @@ const dummyData = [
         imageUrl: 'https://images.unsplash.com/photo-1566577134770-3d85bb3a9cc4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3750&q=80',
         likes: 4307,
         timestamp: "July 15th 2017, 03:12:09 pm",
-        comments: [
-            {
+        comments: [{
                 username: "twitch",
                 text: "Epic Street Fighter action here in Las Vegas at #EVO2017!"
             },
@@ -42,6 +39,30 @@ const dummyData = [
             {
                 username: "dennis_futbol",
                 text: "It that injustice"
+            }
+        ]
+    },
+    {
+        username: "React",
+        thumbnailUrl: 'https://cdn.auth0.com/blog/react-js/react.png',
+        imageUrl: 'https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/04/1493235373large_react_apps_A-01.png',
+        likes: 384,
+        timestamp: "September 2nd 2017, 03:12:09 pm",
+        comments: [{
+                username: "webdev",
+                text: "Love React!"
+            },
+            {
+                username: "johnkirtley",
+                text: "My favorite JavaScript Library."
+            },
+            {
+                username: "lambdaschool",
+                text: "We teach this!"
+            },
+            {
+                username: "facebook",
+                text: "Glad everyone likes our library."
             }
         ]
     }
