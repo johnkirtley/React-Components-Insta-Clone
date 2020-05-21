@@ -1,27 +1,48 @@
-/* 
-Start here and then work through the 
-PostsContainer components and the CommentSection Components. 
-Not all files need code added. 
-Look at each file to see where you need to pass props or add code 
-*/
-import React, { useState } from "react";
-import "./App.css";
-import PostsPage from "./components/PostsContainer/PostsPage";
-import SearchBar from "./components/SearchBar/SearchBarContainer";
-import DummyData from "./dummy-data";
-// import the PostsPage and SearchBar and add them to the App
-// import dummydata
+import React, { useState } from 'react';
+import './App.css';
+import './components/SearchBar/SearchBar.css';
+import PostsPage from './components/PostsContainer/PostsPage';
+import DummyData from './dummy-data';
 
 const App = () => {
-  // set up state for the dummy data and pass to your PostsPage
-  const [data] = useState(DummyData);
-  return (
-    <div className="App" > {
-      /* Add components here  and pass props where appropriate */}
-      <SearchBar />
-      <PostsPage data={data} />
-    </div>
-  );
+	const [data] = useState(DummyData);
+	const [search, setSearch] = useState('');
+
+	const handleChange = (e) => {
+		setSearch(e.target.value);
+		console.log(search);
+	};
+
+	const filteredData = data.filter((item) =>
+		item.username.toLowerCase().includes(search)
+	);
+
+	return (
+		<div className='App'>
+			{' '}
+			<div className='search-bar-wrapper'>
+				<div className='image-wrapper'>
+					<i className='fab fa-instagram' />
+					<p className='instagramTitle'>Instagram</p>
+				</div>
+				<form className='search-form'>
+					<input type='text' placeholder='Search' onChange={handleChange} />
+				</form>
+				<div className='social-wrapper'>
+					<div className='social'>
+						<i className='far fa-compass' />
+					</div>
+					<div className='social'>
+						<i className='far fa-heart' />
+					</div>
+					<div className='social'>
+						<i className='far fa-user-circle' />
+					</div>
+				</div>
+			</div>
+			<PostsPage data={filteredData.length === 0 ? data : filteredData} />
+		</div>
+	);
 };
 
 export default App;
